@@ -1,5 +1,50 @@
 header{
-    h1{
-        color: red;
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+    #containerHeader{
+        height: 4rem;
+        background: rgb(20,20,20);
+        background: linear-gradient(0deg, rgba(20,20,20,0.742734593837535) 0%, rgba   (20,20,20,1) 50%);
+        margin-bottom: 2rem;
+        img{
+          height: 2rem;
+        }
+        #sxHeader{
+          margin-left: 8rem;
+          nav{
+            div{
+              list-style: none;
+              // margin: 0 auto;
+              a{
+                cursor: pointer;
+                margin: 0 1rem;
+                font-size: 0.8rem;
+                color: rgb(197, 195, 195);
+                span{
+                  &:hover{
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
+        }
+        #dxHeader{
+          color: rgb(197, 195, 195);
+          span,i{
+            &:hover{
+              color: white;
+              cursor: pointer;
+            }
+          }
+          i{
+            font-size: 1.2rem;
+          }
+          img{
+            height: 2rem;
+            cursor: pointer;
+          }
+        }
     }
 }
