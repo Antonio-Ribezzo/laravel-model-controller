@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\HomePageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $title = 'Home';
-
-    return view('pages.home', compact('title'));
-})->name('home');
+Route::get('/', [HomePageController::class, 'index'])->name('home');
