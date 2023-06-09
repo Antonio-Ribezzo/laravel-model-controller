@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Guest\HomePageController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
