@@ -13,3 +13,21 @@ body{
 a{
     text-decoration: none;
 }
+
+main{
+    #container{
+        .card{
+            background-color:  #2a2929c6;
+            color: white;
+            &:hover{
+                scale: 102%;
+                cursor: pointer;
+            }
+            .card-body{
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
